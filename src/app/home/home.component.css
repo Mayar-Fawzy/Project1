@@ -5,3 +5,101 @@
   width: 100%;height:100vh;
   
 }
+.content{
+  position: absolute;
+  left: 60%;
+ top: 33%;
+  
+}
+.header{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+}
+.parentt{
+  width: 100%; 
+  height: 100%;
+}
+.logoimg{
+  height: 100px;
+  background-repeat: no-repeat;
+ height:50px;
+}
+.logoContainer{
+  display: flex;
+  overflow: hidden;
+  margin: 10px;
+ padding-left: 50px;
+}
+/* 
+@media (max-width:1068px) and (min-width:450px) {
+  .content{
+    width: 100%;
+  }
+  .content button{
+    display:flex;
+     }
+     
+} 
+ @media (max-width:498px) {
+  .content{
+   width: 100%;
+  }
+  .content button{
+ display: inline-block;
+  }
+  
+}
+@media (min-width:968px) {
+  .content{
+    position: absolute;
+    left: 60%;
+    top: 25%;
+  }
+  .content button{
+    width: 100px;
+  }
+} */
+ .NewArrivals{
+  padding: 70px;
+ }
+ .contant-card{
+    font-family:'Times New Roman', Times, serif;
+  padding-top: 10px;
+
+ width:240px;
+ }
+ /**/
+ .imgCard{
+  border-radius: 10px;
+   box-shadow: 0 0 3px gray; 
+   width: 262px;
+height: 300px;
+  gap: 1;
+ width:240px;
+ }
+ .imgCard:hover{
+  
+  cursor: pointer;
+  .Newbtn{display: block;}
+ }
+ .containerofcard{
+  position: relative;
+  margin: 40px;
+ }
+ .containerofcard:hover{
+  .Newbtn{display: block;} 
+ 
+ }
+ .Newbtn{
+  position: absolute;
+  left: 10%;
+  top: 2%;
+  display: none; 
+  
+  padding: 5px;
+  border-radius: 20px;
+  width: 50px;
+ }
+ li{
+  margin-left: 18px;
+ }
