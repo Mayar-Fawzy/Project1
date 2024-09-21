@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  imgUrl ='../../asserts/img/Placeholderimg.png';
 }
