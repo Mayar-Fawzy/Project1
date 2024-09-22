@@ -1,0 +1,59 @@
+<p class="bg-danger fs-1">binding works!</p>
+<img [src]="imgurl" alt="">
+<button (click)="Hello()" class="btn btn-danger"> Delete</button>
+
+<input type="text" value=""  (click)="Helloo($event)" >
+<h1 [style.color]="productPrice>500?'red':'green'">Hey</h1>
+<h2 [class.bg-danger]="productPrice==100">Hey2</h2>
+<h1 [style]="productPrice<100?mainStyle:SecondStyle">Hey3</h1>
+
+ <!-- <ng-templete #maybe>
+  <h1>Mayar Hidden</h1>
+ </ng-templete>
+
+ <div *ngIf="productPrice>110 ; else maybe">
+    <h1>hey</h1>
+ </div> -->
+ <!-- *ngfor -->
+ <ul>
+    <li *ngFor="let Friend of Friendes">Mayarr</li>
+ </ul>
+ <table class="table my-2 mx-3">
+    <thead>
+        <th>index</th>
+        <th>name</th>
+        <th>age</th>
+        <th>gender</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users; let i =index; let isEven = even;"
+        [style.backgroundColor]="isEven? '#00008b':' ' ">
+            <td>
+                {{i}}
+            </td>
+            <td>
+                {{user.namee}}
+            </td>
+            <td>
+                {{user.age}}
+            </td>
+            <td>
+                {{user.gender}}
+            </td>
+        </tr>
+    </tbody>
+ </table>
+ <!-- ngSwitch -->
+ <div [ngSwitch]="CheckAge>=18">
+ <h1 *ngSwitchCase="true">
+     Welcome
+ </h1>
+ <h2 *ngSwitchCase="false">
+     You Are To Young
+ </h2>
+ <p *ngSwitchDefault>
+     No
+ </p>
+ </div>
+ <!-- ngclass -->
+  
