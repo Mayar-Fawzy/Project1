@@ -56,4 +56,16 @@
  </p>
  </div>
  <!-- ngclass -->
-  
+  <div class="container py-5 my-5">
+     <h1 [ngClass]="
+     {'text-center bg-danger':productPrice<100,  'bg-warning':nAmE=='mayar'
+     }" >Binding H11</h1>
+  </div>
+  <!-- ngStyle -->
+  <div class="container py-5 my-5">
+    <h1 [ngStyle]="
+    {'color':productPrice<100? 'red': 'pink',
+    'margin.px':nAmE=='mayar'?'100':'29'
+    }" >Binding H11</h1>
+ </div>
+ 

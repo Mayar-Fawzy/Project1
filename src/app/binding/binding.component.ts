@@ -8,6 +8,7 @@ import { Users } from '../users';
  
 })
 export class BindingComponent {
+  nAmE:string="mayar";
   imgurl='../../assets/logo/logo\ 01.png';
   Hello(){alert("hello");}
   Helloo(eventInfo:MouseEvent){
