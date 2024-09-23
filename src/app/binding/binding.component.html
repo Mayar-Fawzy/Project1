@@ -68,4 +68,19 @@
     'margin.px':nAmE=='mayar'?'100':'29'
     }" >Binding H11</h1>
  </div>
- 
+ <!-- try Neasted Routing -->
+ <div class="row bg-danger mb-5" >
+    <div class="col-md-5">
+    <ul>
+        <li>
+            <a routerLink="/binding/web"> Web</a>
+        </li>
+        <li>
+            <a routerLink="/binding/mobile"> mobile</a>
+        </li>
+    </ul>
+    </div>
+    <div class="col-md-5">
+        <router-outlet></router-outlet>
+    </div>
+  </div>

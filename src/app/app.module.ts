@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { BindingComponent } from './binding/binding.component';
 import { NavComponent } from './nav/nav.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { WebComponent } from './web/web.component';
+import { MobileComponent } from './mobile/mobile.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
  
     BindingComponent,
       NavComponent,
-      NotFoundComponent
+      NotFoundComponent,
+      
+      MobileComponent,
+             WebComponent
   ],
   imports: [
     BrowserModule,
