@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { ServiesService } from '../servies.service';
 import { Users } from '../users';
 
-
 @Component({
   selector: 'app-binding',
   templateUrl: './binding.component.html',
@@ -10,6 +9,7 @@ import { Users } from '../users';
  
 })
 export class BindingComponent {
+  task: string=''; 
   nAmE:string="mayar";
   imgurl='../../assets/logo/logo\ 01.png';
   Hello(){alert("hello");}
@@ -31,5 +31,6 @@ export class BindingComponent {
     //  Genarics
      GenaricFun<T>(param: T): T {
       return param;
-    } 
+    }
+   
 }
