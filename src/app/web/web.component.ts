@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./web.component.css']
 })
 export class WebComponent {
+bindingUsers: any;
 
 }

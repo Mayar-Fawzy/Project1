@@ -12,8 +12,8 @@ const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'binding',component:BindingComponent ,
     children:[
-       {path:'web',component:WebComponent},
-      {path:'mobile',component:MobileComponent}
+        { path:'web',component:WebComponent},
+      { path:'mobile',component:MobileComponent}
     ]
   },
   {path:'**',component:NotFoundComponent}

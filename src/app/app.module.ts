@@ -20,7 +20,7 @@ import { MobileComponent } from './mobile/mobile.component';
       NotFoundComponent,
       
       MobileComponent,
-             WebComponent
+       WebComponent   
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { ServiesService } from '../servies.service';
 import { Users } from '../users';
+
 
 @Component({
   selector: 'app-binding',
@@ -19,14 +21,15 @@ export class BindingComponent {
     SecondStyle='font-size:150px; color:blue;'
     Friendes:string[]=["mayar","mona","laila","malk"];
 
-    constructor(){}
+    Users:Users[]=[];
+    constructor(_userService:ServiesService ){
+      this.Users=_userService.users; 
+    }
 
-     users:Users[]=[
-      {namee:'mayar' , age : 21 , gender : 'female'},
-      {namee:'laila' , age : 4 , gender : 'female'},
-      {namee:'ahmed' , age : 25 , gender : 'male'},
-      {namee:'mohamed' , age : 21 , gender : 'male'},
-      {namee:'anwaar' , age : 25 , gender : 'female'},
-     ]
+    
      CheckAge:number=18;
+    //  Genarics
+     GenaricFun<T>(param: T): T {
+      return param;
+    } 
 }

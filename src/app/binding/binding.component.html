@@ -7,13 +7,18 @@
 <h2 [class.bg-danger]="productPrice==100">Hey2</h2>
 <h1 [style]="productPrice<100?mainStyle:SecondStyle">Hey3</h1>
 
- <!-- <ng-templete #maybe>
-  <h1>Mayar Hidden</h1>
- </ng-templete>
 
+<!-- *ngIf -->
+<ng-template #maybe>
+    <h1>Mayar Hidden</h1>
+   </ng-template>
  <div *ngIf="productPrice>110 ; else maybe">
     <h1>hey</h1>
- </div> -->
+ </div>
+
+   
+   
+  
  <!-- *ngfor -->
  <ul>
     <li *ngFor="let Friend of Friendes">Mayarr</li>
@@ -26,8 +31,9 @@
         <th>gender</th>
     </thead>
     <tbody>
-        <tr *ngFor="let user of users; let i =index; let isEven = even;"
-        [style.backgroundColor]="isEven? '#00008b':' ' ">
+      
+        <tr *ngFor="let user of Users; let i =index; let isEven = even;"
+        [style.backgroundColor]="isEven ? '#09c' : ''">
             <td>
                 {{i}}
             </td>
