@@ -19,7 +19,8 @@
   <app-slider [slider]="task"></app-slider>
  <input [(ngModel)]='task'  type="text" class="" name="" id="" >
 
-
+ <!-- Data Flow From Child To Parent -->
+  <app-slider (sliderTask)="task = $event"></app-slider>
  <!-- *ngfor -->
  <ul>
     <li *ngFor="let Friend of Friendes">Mayarr</li>
