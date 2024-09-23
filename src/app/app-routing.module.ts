@@ -5,6 +5,7 @@ import { BindingComponent } from './binding/binding.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { WebComponent } from './web/web.component';
 import { MobileComponent } from './mobile/mobile.component';
+import { ShowApiDataComponent } from './show-api-data/show-api-data.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,7 @@ const routes: Routes = [
         { path:'web',component:WebComponent},
       { path:'mobile',component:MobileComponent}
     ]
-  },
+  },{path:'ShowApiData',component:ShowApiDataComponent},
   {path:'**',component:NotFoundComponent}
 
 ];

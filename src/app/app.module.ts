@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -11,6 +11,7 @@ import { WebComponent } from './web/web.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { FormsModule } from '@angular/forms';
 import { SliderComponent } from './slider/slider.component';
+import { ShowApiDataComponent } from './show-api-data/show-api-data.component';
 
 @NgModule({
   declarations: [
@@ -23,9 +24,11 @@ import { SliderComponent } from './slider/slider.component';
       
       MobileComponent,
        WebComponent,
-       SliderComponent   
+       SliderComponent,
+       ShowApiDataComponent   
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule

@@ -1,0 +1,25 @@
+<!-- show error -->
+<div  *ngIf="myerror" >
+    <div class="alert alert-danger p-5 m-5">
+        <h4 class="text-center">{{myerror}}</h4>
+        
+    </div>
+</div>
+
+
+
+
+    <div  class="row container-fluid">
+  <div *ngFor="let result of myresults" class="col-md-2 m-1 p-1 d-flex align-items-center justify-content-center ">
+    <div class="content">
+      <div class="">
+        <img
+          src="https://image.tmdb.org/t/p/original{{ result.poster_path }}"
+          class="w-100"
+          alt=""
+        />
+        <h4>{{ result.title }}</h4>
+      </div>
+    </div>
+  </div>
+</div>
