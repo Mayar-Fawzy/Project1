@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NewsService } from '../news.service';
+import { subscribeOn, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-show-api-data',
@@ -9,6 +10,7 @@ import { NewsService } from '../news.service';
 export class ShowApiDataComponent {
   myresults:any[]=[];
   myerror:string='';
+  subscription=new Subscription();
   constructor(private _servies:NewsService) {} 
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
@@ -27,5 +29,11 @@ export class ShowApiDataComponent {
     //complete دايما شغاله
     ()=>{console.log("complete");}
   )
+  }
+  ngOnDestroy(): void {
+    //Called once, before the instance is destroyed.
+    //stop calling api when i leave a component (lazy execution)
+
+    this.subscription.unsubscribe;
   }
 }
