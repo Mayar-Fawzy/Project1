@@ -10,6 +10,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { WebComponent } from './web/web.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { FormsModule } from '@angular/forms';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms';
       NotFoundComponent,
       
       MobileComponent,
-       WebComponent   
+       WebComponent,
+       SliderComponent   
   ],
   imports: [
     BrowserModule,
